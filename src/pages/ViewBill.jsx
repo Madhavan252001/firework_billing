@@ -113,7 +113,7 @@ export default function ViewBill() {
       }
 
       // 2. Fetch authoritative order & shop_details from live API
-      // GET /orders/offline/:id or lookup from GET /orders/offline / estimates
+      // GET /orders/offline/:id or lookup from GET /orders/offline / estimat
       try {
         const targetId = orderId || (hashData ? null : undefined);
         if (targetId) {
