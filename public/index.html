@@ -2,42 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#eceef5" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- SEO Meta Tags -->
+    <title>Fireworks Billing & POS System</title>
+    <meta name="description" content="Pattaz.com Fireworks POS & Billing System. Fast, reliable GST billing, inventory management, customer ledger, and order tracking for fireworks manufacturers and cracker retail stores." />
+    <meta name="keywords" content="Pattaz, Pattaz POS, Fireworks POS, Crackers Billing Software, Shiva Crackers Billing, Sivakasi Crackers POS, GST Fireworks Billing, Retail Billing Software India" />
+    <meta name="author" content="Pattaz.com / SDS" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://shivacrackers.pattaz.com/billing" />
+
+    <!-- GEO / Location Targeting Meta Tags -->
+    <meta name="geo.region" content="IN-TN" />
+    <meta name="geo.placename" content="Sivakasi, Tamil Nadu, India" />
+    <meta name="geo.position" content="9.4533;77.7997" />
+    <meta name="ICBM" content="9.4533, 77.7997" />
+
+    <!-- Open Graph Meta Tags (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:site_name" content="Pattaz.com Fireworks POS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pattaz.com - Fireworks Billing & POS System" />
+    <meta property="og:description" content="Fast, reliable GST billing, inventory management, credit ledgers, and fast mobile billing for fireworks retailers and stores." />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon.png" />
+    <meta property="og:url" content="https://shivacrackers.pattaz.com/billing" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pattaz.com - Fireworks Billing & POS System" />
+    <meta name="twitter:description" content="Fast GST billing software tailored for fireworks stores and wholesale distributors." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/favicon.png" />
+
+    <!-- App & Manifest Links -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- AEO & GEO Structured JSON-LD Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://shivacrackers.pattaz.com/#software",
+          "name": "Pattaz.com Fireworks POS & Billing System",
+          "url": "https://shivacrackers.pattaz.com/billing",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All (Web, Mac, Windows, Android, iOS)",
+          "softwareVersion": "1.0.0",
+          "description": "Comprehensive Point of Sale (POS) and inventory billing system customized for fireworks shops, cracker agencies, and wholesale stores with fast GST calculation and credit ledger management.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Pattaz.com",
+            "url": "https://pattaz.com",
+            "logo": "https://shivacrackers.pattaz.com/favicon.png"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://shivacrackers.pattaz.com/#business",
+          "name": "Shiva Crackers - Pattaz Fireworks POS",
+          "url": "https://shivacrackers.pattaz.com",
+          "logo": "https://shivacrackers.pattaz.com/favicon.png",
+          "description": "Wholesale and retail fireworks supplier operating with Pattaz POS system.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sivakasi",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 9.4533,
+            "longitude": 77.7997
+          },
+          "currenciesAccepted": "INR",
+          "paymentAccepted": "Cash, Credit Card, UPI, Bank Transfer"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://shivacrackers.pattaz.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Pattaz.com Fireworks POS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pattaz.com Fireworks POS is a specialized billing and point-of-sale software designed for fireworks manufacturers, wholesale distributors, and retail cracker outlets in India, offering instant GST billing, discount controls, and credit ledgers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Pattaz POS calculate GST and discount on fireworks billing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pattaz POS automatically applies percentage GST and flat or percentage discounts to the total invoice during checkout, generating transparent bill summaries for retail customers and wholesale buyers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Pattaz POS support credit and partial payments for cracker orders?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Pattaz POS includes full credit payment tracking with partial payment sliders, balance due calculations, and customer ledger management."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://shivacrackers.pattaz.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://shivacrackers.pattaz.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Billing Counter",
+              "item": "https://shivacrackers.pattaz.com/billing"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Orders",
+              "item": "https://shivacrackers.pattaz.com/orders"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

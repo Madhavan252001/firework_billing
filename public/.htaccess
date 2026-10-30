@@ -1,0 +1,6 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /billing/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /billing/index.html [L]

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/billing/static/css/main.6b8fec56.css",
+    "main.js": "/billing/static/js/main.7de427bd.js",
+    "static/js/795.66f581bd.chunk.js": "/billing/static/js/795.66f581bd.chunk.js",
+    "static/js/52.7103d58e.chunk.js": "/billing/static/js/52.7103d58e.chunk.js",
+    "static/js/82.b836ada7.chunk.js": "/billing/static/js/82.b836ada7.chunk.js",
+    "static/js/239.90f22589.chunk.js": "/billing/static/js/239.90f22589.chunk.js",
+    "static/media/logo.png": "/billing/static/media/logo.5841282f91058a52f971.png",
+    "static/media/Network error.gif": "/billing/static/media/Network error.80a09e5d944c37a49fb7.gif",
+    "static/media/favicon.png": "/billing/static/media/favicon.235b6587295c79d087a6.png",
+    "static/media/pattaz_brand_stacked.png": "/billing/static/media/pattaz_brand_stacked.426c9330b71829552596.png",
+    "static/media/pattaz_logo_top.png": "/billing/static/media/pattaz_logo_top.8e041c151c7cd23c3756.png",
+    "index.html": "/billing/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.6b8fec56.css",
+    "static/js/main.7de427bd.js"
+  ]
+}
